@@ -38,7 +38,7 @@ define(["avalon"], function (avalon) {
             element.innerHTML = innerHTML
             avalon.scan(element, [model].concat(vmodels))
         })
-        return model//
+        return model
     }
 
 

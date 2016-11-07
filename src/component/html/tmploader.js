@@ -12,8 +12,9 @@ define([
     html+"pager.html",
     'css!../html/fixstyle.css'
     ], function (a) {
+
     var tmp={
-        pager:a,
+        pager:a
     }
 
     return tmp;
