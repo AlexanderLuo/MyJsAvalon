@@ -1,0 +1,19 @@
+
+
+<div  class="qkypage mt16" >
+    <a ms-click="plusProxy(state.page-1)" href="javascript:" ms-class="no:state.page-1<1" class="no">上一页</a>
+    <a ms-click="plusProxy(1)" href="javascript:" ms-if="state.page-2>1" >1</a>
+    <span ms-if="state.page-2>2">...</span>
+    <a ms-click="plusProxy(state.page-2)" href="javascript:" ms-if="state.page-2>0" >{{state.page-2}}</a>
+    <a ms-click="plusProxy(state.page-1)" href="javascript:" ms-if="state.page-1>0">{{state.page-1}}</a>
+    <a href="javascript:" class="cur" >{{state.page}}</a>
+    <a ms-click="plusProxy(state.page+1)" href="javascript:" ms-if="state.page+1<=state.total">{{state.page+1}}</a>
+    <span ms-if="state.total>state.page+2">...</span>
+    <a ms-click="plusProxy(state.total)" href="javascript:" ms-if="state.total>state.page+1">{{state.total}}</a>
+    <a ms-click="plusProxy(state.page+1)" href="javascript:" ms-class="no:state.page+1>state.total">下一页</a>
+    <span >共{{state.records}}条</span>
+</div>
+
+
+
+

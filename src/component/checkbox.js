@@ -14,7 +14,7 @@ define(["avalon"], function (avalon) {
 
 
         var model = avalon.define({
-            id: data.checkboxId,
+            $id: data.checkboxId,
             state: {
                 rows:[],
                 checkAll:false
@@ -34,13 +34,11 @@ define(["avalon"], function (avalon) {
             }
         })
 
-
-        //scan处理
         avalon.nextTick(function () {
             element.innerHTML = innerHTML
             avalon.scan(element, [model].concat(vmodels))
         })
-        return model//必须返回新VM
+        return model//
     }
 
 
