@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="./avalon-define.js"></script>
+
+<body ms-controller="test">
+
+{{name}}
+<!--<input ms-duplex="name" />-->
+
+</body>
+<script> console.log(1)</script>
+
+
+<script>
+    var ab=avalon.define({
+        $id:"test",
+        name:"luohao",
+        fun:function(){
+            console.log(1);
+        }
+    })
+
+//    avalon.scan(document.body,ab);
+
+
+  console.log(document.body)
+    console.log(1)
+
+</script>
+</html>
